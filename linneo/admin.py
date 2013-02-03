@@ -11,7 +11,7 @@ class MajorTaxonomicRankAdmin(TaxonAdmin):
     exclude = ('rank',)
     list_display = ('name', 'rank',)
     mptt_level_indent = 20
-    list_filter = (InRankListFilter,)
+    list_filter = ()
 
 admin.site.register(DomainTaxon, MajorTaxonomicRankAdmin)
 admin.site.register(KingdomTaxon, MajorTaxonomicRankAdmin)
@@ -23,7 +23,7 @@ admin.site.unregister(Taxon)
 
 class TaxonAdmin(TaxonAdmin):
     list_display = ('name', 'rank',)
-    list_filter = (RankListFilter,)
+    list_filter = (RankListFilter, InRankListFilter)
     mptt_level_indent = 20
 
 admin.site.register(Taxon, TaxonAdmin)

@@ -7,7 +7,7 @@ from django.utils.translation import ugettext_lazy as _
 from taxonomy.models import TaxonRank
 
 class RankListFilter(SimpleListFilter):
-    title = _('taxonomic rank')
+    title = _('taxonomic rank group')
 
     parameter_name = 'taxo_rank'
 
@@ -39,8 +39,9 @@ class InRankListFilter(SimpleListFilter):
     parameter_name = 'minortaxo_rank'
 
     def lookups(self, request, model_admin):
-        rank = model_admin.model.objects._get_rank().rank
-        return ( (it.in_rank_order, it) for it in TaxonRank.objects.filter(rank=rank))
+        if request.GET.get('taxo_rank', False):
+            rank = request.GET.get('taxo_rank')
+            return ( (it.in_rank_order, it) for it in TaxonRank.objects.filter(rank=rank))
 
     def queryset(self, request, queryset):
         if self.value():
