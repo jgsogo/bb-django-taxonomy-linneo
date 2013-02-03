@@ -8,6 +8,7 @@ class TaxonRankMixin(models.Model):
     slug = models.SlugField()
 
     in_rank_order = models.IntegerField(default=0)
+    compulsory = models.BooleanField(default=False)
 
     class Meta:
         abstract = True
