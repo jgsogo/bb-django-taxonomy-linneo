@@ -7,7 +7,7 @@
             "name": "Domain",
             "slug": "domain",
             "in_rank_order": "0",
-            "compulsory" : "true"
+            "compulsory" : "1"
         }
     },
     {
@@ -18,7 +18,7 @@
             "name": "Kingdom",
             "slug": "kingdom",
             "in_rank_order": "1",
-            "compulsory" : "true"
+            "compulsory" : "1"
         }
     },
     {
@@ -59,7 +59,7 @@
             "name": "Phylum/Division",
             "slug": "phylum-division",
             "in_rank_order": "1",
-            "compulsory" : "true"
+            "compulsory" : "1"
         }
     },
     {
@@ -150,7 +150,7 @@
             "name": "Class",
             "slug": "class",
             "in_rank_order": "1",
-            "compulsory" : "true"
+            "compulsory" : "1"
         }
     },
     {
@@ -371,7 +371,7 @@
             "name": "Order",
             "slug": "order",
             "in_rank_order": "6",
-            "compulsory" : "true"
+            "compulsory" : "1"
         }
     },
     {
@@ -552,7 +552,7 @@
             "name": "Family",
             "slug": "family",
             "in_rank_order": "8",
-            "compulsory" : "true"
+            "compulsory" : "1"
         }
     },
     {
@@ -623,7 +623,7 @@
             "name": "Genus",
             "slug": "genus",
             "in_rank_order": "0",
-            "compulsory" : "true"
+            "compulsory" : "1"
         }
     },
     {
@@ -694,7 +694,7 @@
             "name": "Species",
             "slug": "species",
             "in_rank_order": "1",
-            "compulsory" : "true"
+            "compulsory" : "1"
         }
     },
     {

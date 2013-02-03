@@ -3,4 +3,4 @@
 
 
 from taxonomy.utils import inject_app_defaults
-inject_app_defaults('taxonomy.contrib.category_tree')
+inject_app_defaults('linneo')
