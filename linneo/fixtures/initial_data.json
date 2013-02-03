@@ -4,8 +4,8 @@
         "pk": 1,
         "fields": {
             "rank": "0",
-            "name": "Dominio",
-            "slug": "dominio",
+            "name": "Domain",
+            "slug": "domain",
             "in_rank_order": "0"
         }
     },
@@ -14,8 +14,8 @@
         "pk": 2,
         "fields": {
             "rank": "0",
-            "name": "Reino",
-            "slug": "reino",
+            "name": "Kingdom",
+            "slug": "kingdom",
             "in_rank_order": "1"
         }
     },
@@ -23,60 +23,720 @@
         "model": "taxonomy.taxonrank",
         "pk": 3,
         "fields": {
-            "rank": "1",
-            "name": "Filo/division",
-            "slug": "filo-division",
-            "in_rank_order": "1"
+            "rank": "0",
+            "name": "Subkingdom",
+            "slug": "subkingdom",
+            "in_rank_order": "2"
         }
     },
     {
         "model": "taxonomy.taxonrank",
         "pk": 4,
         "fields": {
-            "rank": "2",
-            "name": "Clase",
-            "slug": "clase",
-            "in_rank_order": "1"
+            "rank": "0",
+            "name": "Infrakingdom",
+            "slug": "infrakingdom",
+            "in_rank_order": "3"
         }
     },
     {
         "model": "taxonomy.taxonrank",
         "pk": 5,
         "fields": {
-            "rank": "4",
-            "name": "Orden",
-            "slug": "orden",
-            "in_rank_order": "4"
+            "rank": "1",
+            "name": "Superphylum/Superdivision",
+            "slug": "superphylum-superdivision",
+            "in_rank_order": "0"
         }
     },
     {
         "model": "taxonomy.taxonrank",
         "pk": 6,
         "fields": {
-            "rank": "7",
-            "name": "Familia",
-            "slug": "familia",
-            "in_rank_order": "3"
+            "rank": "1",
+            "name": "Phylum/Division",
+            "slug": "phylum-division",
+            "in_rank_order": "1"
         }
     },
     {
         "model": "taxonomy.taxonrank",
         "pk": 7,
         "fields": {
-            "rank": "9",
-            "name": "Género",
-            "slug": "genero",
-            "in_rank_order": "0"
+            "rank": "1",
+            "name": "Subphylum/Subdivision",
+            "slug": "subphylum-subdivision",
+            "in_rank_order": "2"
         }
     },
     {
         "model": "taxonomy.taxonrank",
         "pk": 8,
         "fields": {
-            "rank": "10",
-            "name": "Especie",
-            "slug": "especie",
+            "rank": "1",
+            "name": "Infraphylum/Infradivision",
+            "slug": "infraphylum-infradivision",
+            "in_rank_order": "3"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 9,
+        "fields": {
+            "rank": "1",
+            "name": "Microphylum",
+            "slug": "microphylum",
+            "in_rank_order": "4"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 10,
+        "fields": {
+            "rank": "2",
+            "name": "Supercohort",
+            "slug": "supercohort",
             "in_rank_order": "0"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 11,
+        "fields": {
+            "rank": "2",
+            "name": "Cohort",
+            "slug": "cohort",
+            "in_rank_order": "1"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 12,
+        "fields": {
+            "rank": "2",
+            "name": "Subcohort",
+            "slug": "subcohort",
+            "in_rank_order": "2"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 13,
+        "fields": {
+            "rank": "2",
+            "name": "Infracohort",
+            "slug": "infracohort",
+            "in_rank_order": "3"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 14,
+        "fields": {
+            "rank": "3",
+            "name": "Superclass",
+            "slug": "superclass",
+            "in_rank_order": "0"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 15,
+        "fields": {
+            "rank": "3",
+            "name": "Class",
+            "slug": "class",
+            "in_rank_order": "1"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 16,
+        "fields": {
+            "rank": "3",
+            "name": "Subclass",
+            "slug": "subclass",
+            "in_rank_order": "2"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 17,
+        "fields": {
+            "rank": "3",
+            "name": "Infraclass",
+            "slug": "infraclass",
+            "in_rank_order": "3"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 18,
+        "fields": {
+            "rank": "3",
+            "name": "Parvclass",
+            "slug": "parvclass",
+            "in_rank_order": "4"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 19,
+        "fields": {
+            "rank": "4",
+            "name": "Superdivision",
+            "slug": "superdivision",
+            "in_rank_order": "0"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 20,
+        "fields": {
+            "rank": "4",
+            "name": "Division",
+            "slug": "division",
+            "in_rank_order": "1"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 21,
+        "fields": {
+            "rank": "4",
+            "name": "Subdivision",
+            "slug": "subdivision",
+            "in_rank_order": "2"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 22,
+        "fields": {
+            "rank": "4",
+            "name": "Infradivision",
+            "slug": "infradivision",
+            "in_rank_order": "3"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 23,
+        "fields": {
+            "rank": "5",
+            "name": "Superlegion",
+            "slug": "superlegion",
+            "in_rank_order": "0"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 24,
+        "fields": {
+            "rank": "5",
+            "name": "Legion",
+            "slug": "legion",
+            "in_rank_order": "1"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 25,
+        "fields": {
+            "rank": "5",
+            "name": "Sublegion",
+            "slug": "sublegion",
+            "in_rank_order": "2"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 26,
+        "fields": {
+            "rank": "5",
+            "name": "Infralegion",
+            "slug": "infralegion",
+            "in_rank_order": "3"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 27,
+        "fields": {
+            "rank": "6",
+            "name": "Supercohort",
+            "slug": "supercohort",
+            "in_rank_order": "0"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 28,
+        "fields": {
+            "rank": "6",
+            "name": "Cohort",
+            "slug": "Cohort",
+            "in_rank_order": "1"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 29,
+        "fields": {
+            "rank": "6",
+            "name": "Subcohort",
+            "slug": "subcohort",
+            "in_rank_order": "2"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 30,
+        "fields": {
+            "rank": "6",
+            "name": "Infracohort",
+            "slug": "infracohort",
+            "in_rank_order": "3"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 31,
+        "fields": {
+            "rank": "7",
+            "name": "Gigaorder",
+            "slug": "gigaorder",
+            "in_rank_order": "0"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 32,
+        "fields": {
+            "rank": "7",
+            "name": "Magnorder/Megaorder",
+            "slug": "magnorder-megaorder",
+            "in_rank_order": "1"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 33,
+        "fields": {
+            "rank": "7",
+            "name": "Grandorder/Capaxorder",
+            "slug": "grandorder-capaxorder",
+            "in_rank_order": "2"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 34,
+        "fields": {
+            "rank": "7",
+            "name": "Mirorder/Hyperorder",
+            "slug": "mirorder-hyperorder",
+            "in_rank_order": "3"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 35,
+        "fields": {
+            "rank": "7",
+            "name": "Superorder",
+            "slug": "superorder",
+            "in_rank_order": "4"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 36,
+        "fields": {
+            "rank": "7",
+            "name": "Series",
+            "slug": "series",
+            "in_rank_order": "5"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 37,
+        "fields": {
+            "rank": "7",
+            "name": "Order",
+            "slug": "order",
+            "in_rank_order": "6"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 38,
+        "fields": {
+            "rank": "7",
+            "name": "Parvorder (rare position)",
+            "slug": "parvorder-rare",
+            "in_rank_order": "7"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 39,
+        "fields": {
+            "rank": "7",
+            "name": "Nanorder",
+            "slug": "nanorder",
+            "in_rank_order": "8"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 40,
+        "fields": {
+            "rank": "7",
+            "name": "Hypoorder",
+            "slug": "hypoorder",
+            "in_rank_order": "9"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 41,
+        "fields": {
+            "rank": "7",
+            "name": "Minorder",
+            "slug": "minorder",
+            "in_rank_order": "10"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 42,
+        "fields": {
+            "rank": "7",
+            "name": "Suborder",
+            "slug": "suborder",
+            "in_rank_order": "11"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 43,
+        "fields": {
+            "rank": "7",
+            "name": "Infraorder",
+            "slug": "infraorder",
+            "in_rank_order": "12"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 44,
+        "fields": {
+            "rank": "7",
+            "name": "Parvorder/Microorder",
+            "slug": "parvorder-microorder",
+            "in_rank_order": "13"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 45,
+        "fields": {
+            "rank": "8",
+            "name": "Section",
+            "slug": "section",
+            "in_rank_order": "0"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk":46,
+        "fields": {
+            "rank": "8",
+            "name": "Subsection",
+            "slug": "subsection",
+            "in_rank_order": "1"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 47,
+        "fields": {
+            "rank": "9",
+            "name": "Gigafamily",
+            "slug": "gigafamily",
+            "in_rank_order": "0"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 48,
+        "fields": {
+            "rank": "9",
+            "name": "Megafamily",
+            "slug": "megafamily",
+            "in_rank_order": "1"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 49,
+        "fields": {
+            "rank": "9",
+            "name": "Grandfamily",
+            "slug": "grandfamily",
+            "in_rank_order": "2"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 50,
+        "fields": {
+            "rank": "9",
+            "name": "Hyperfamily",
+            "slug": "hyperfamily",
+            "in_rank_order": "3"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 51,
+        "fields": {
+            "rank": "9",
+            "name": "Superfamily",
+            "slug": "superfamily",
+            "in_rank_order": "4"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 52,
+        "fields": {
+            "rank": "9",
+            "name": "Epifamily",
+            "slug": "epifamily",
+            "in_rank_order": "5"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 53,
+        "fields": {
+            "rank": "9",
+            "name": "Series",
+            "slug": "series",
+            "in_rank_order": "6"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 54,
+        "fields": {
+            "rank": "9",
+            "name": "Group",
+            "slug": "group",
+            "in_rank_order": "7"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 55,
+        "fields": {
+            "rank": "9",
+            "name": "Family",
+            "slug": "family",
+            "in_rank_order": "8"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 56,
+        "fields": {
+            "rank": "9",
+            "name": "Subfamily",
+            "slug": "subfamily",
+            "in_rank_order": "9"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 57,
+        "fields": {
+            "rank": "9",
+            "name": "Infrafamily",
+            "slug": "infrafamily",
+            "in_rank_order": "10"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 58,
+        "fields": {
+            "rank": "10",
+            "name": "Supertribe",
+            "slug": "supertribe",
+            "in_rank_order": "0"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 59,
+        "fields": {
+            "rank": "10",
+            "name": "Tribe",
+            "slug": "tribe",
+            "in_rank_order": "1"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 60,
+        "fields": {
+            "rank": "10",
+            "name": "Subtribe",
+            "slug": "subtribe",
+            "in_rank_order": "2"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 61,
+        "fields": {
+            "rank": "10",
+            "name": "Infratribe",
+            "slug": "infratribe",
+            "in_rank_order": "3"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 62,
+        "fields": {
+            "rank": "11",
+            "name": "Genus",
+            "slug": "genus",
+            "in_rank_order": "0"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 63,
+        "fields": {
+            "rank": "11",
+            "name": "Subgenus",
+            "slug": "subgenus",
+            "in_rank_order": "1"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 64,
+        "fields": {
+            "rank": "11",
+            "name": "Section",
+            "slug": "section",
+            "in_rank_order": "2"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 65,
+        "fields": {
+            "rank": "11",
+            "name": "Subsection",
+            "slug": "subsection",
+            "in_rank_order": "3"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 66,
+        "fields": {
+            "rank": "11",
+            "name": "Series",
+            "slug": "series",
+            "in_rank_order": "4"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 67,
+        "fields": {
+            "rank": "11",
+            "name": "Subseries",
+            "slug": "subseries",
+            "in_rank_order": "5"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 68,
+        "fields": {
+            "rank": "12",
+            "name": "Superspecies",
+            "slug": "superspecies",
+            "in_rank_order": "0"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 69,
+        "fields": {
+            "rank": "12",
+            "name": "Species",
+            "slug": "species",
+            "in_rank_order": "1"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 70,
+        "fields": {
+            "rank": "12",
+            "name": "Subspecies/Forma Specialis/Variety",
+            "slug": "subspecies-forma_specialis-variety",
+            "in_rank_order": "2"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 71,
+        "fields": {
+            "rank": "12",
+            "name": "Variety/Form/Morph",
+            "slug": "variety-form_morph",
+            "in_rank_order": "3"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 72,
+        "fields": {
+            "rank": "12",
+            "name": "Subvariety",
+            "slug": "subvariety",
+            "in_rank_order": "4"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 73,
+        "fields": {
+            "rank": "12",
+            "name": "Form",
+            "slug": "form",
+            "in_rank_order": "5"
+        }
+    },
+    {
+        "model": "taxonomy.taxonrank",
+        "pk": 74,
+        "fields": {
+            "rank": "12",
+            "name": "Subform",
+            "slug": "subform",
+            "in_rank_order": "6"
         }
     }
 ]
