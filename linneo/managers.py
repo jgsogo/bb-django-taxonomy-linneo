@@ -20,8 +20,18 @@ class MajorTaxonomicRankManager(TaxonManager):
         except TaxonRank.MultipleObjectsReturned:
             raise ValueError("There are more than one taxon rank named %s (rank=%s)." %\
                              (self.__rank__rank, self.__slug))
+        return self.__rank
 
     def get_query_set(self):
         if not self.__rank:
             self._get_rank()
         return super(MajorTaxonomicRankManager, self).get_query_set().filter(rank=self.__rank)
+
+
+class TaxonomicRankGroupManager(TaxonManager):
+    def __init__(self, rank):
+        super(TaxonomicRankGroupManager, self).__init__()
+        self.__rank= rank
+
+    def get_query_set(self):
+        return super(TaxonomicRankGroupManager, self).get_queryset().filter(rank__rank=self.__rank)

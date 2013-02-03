@@ -11,6 +11,7 @@ class TaxonRankMixin(models.Model):
     compulsory = models.BooleanField(default=False)
 
     class Meta:
+        ordering = ['rank', 'in_rank_order']
         abstract = True
 
     def __unicode__(self):
